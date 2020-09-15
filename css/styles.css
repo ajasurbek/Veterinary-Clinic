@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*fonts*/
 @font-face {
   font-family: "Futura PT";
@@ -75,13 +82,15 @@
   margin: 0;
   padding: 0;
   font-family: "Futura PT", "Arial", sans-serif;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #E5E5E5;
 }
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 .container {
   max-width: 1350px;
@@ -121,6 +130,8 @@
 
 /* HEADER INFO */
 .header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .header_container {
@@ -128,11 +139,17 @@
   margin-left: auto;
 }
 .header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 11px;
 }
 .adres {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #333333;
 }
@@ -153,13 +170,14 @@
 }
 .header-number::before {
   display: inline-block;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   width: 8px;
   height: 8px;
   background-color: var(--main-orange);
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
   background-size: contain;
   background-position: center;
   content: "";
@@ -183,6 +201,8 @@
   color: #333333;
 }
 .datee {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -192,13 +212,20 @@
   background-color: var(--main-white);
 }
 .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 10px;
   z-index: 1;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .header-logo-link {
   padding: 21px 0;
@@ -214,13 +241,23 @@
   z-index: 1;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .header-list {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -275,11 +312,29 @@
 }
 
 .pet {
-  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
 }
-/* ======SECTION== */
+/* ======hero== */
+.hero {
+  min-height: 790px;
+  background-image: url("../img/Group\ 38.png"),
+  url("../img/hero-bg-right.png");
+  background-repeat: no-repeat;
+  background-position: left top -70px,
+  right bottom;
+}
 
+.birds-center {
+  display: inline-block;
+  margin-left: 750px;
+  margin-top: 145px;
+
+
+}
 .birds-heading {
+  margin: 0;
   font-size: 70px;
   line-height: 64px;
   width: 608px;
@@ -288,6 +343,7 @@
   color: rgb(120,192,222);
 }
 .birds-text {
+
   width: 495px;
 }
 .birds-button {
@@ -298,8 +354,33 @@
   width: 140px;
   border: 1px solid #DBDBDB;
 }
+.blo {
+  min-height: 80px;
+  background-image: url("../img/“.png"),
+  url("../img/“.png");
+  background-repeat: no-repeat;
+  background-position: left 270px top,
+  right 320px bottom;
+}
 .blok-text {
+  margin-left: auto;
+  margin-right: auto;
   width: 753px;
+  font-size: 20px;
+  line-height: 26px;
+}
+.cli {
+  margin-top: 35px;
+  margin-left: 600px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.heading {
+  text-align: center;
+  margin-top: 191px;
+  font-size: 48px;
+  line-height: 20px;
 }
  /* =sectionn */
 .section_line {
@@ -310,7 +391,6 @@
   background-color: #78c0de;
   background-image: url("../img/leg.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
 }
@@ -323,6 +403,8 @@
   color: var(--main-white);
 }
 .seci-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .seci__email {
@@ -336,11 +418,35 @@
   border: 1px solid #dd1e05;
   color: #dd1e05;
 }
+.seci__email:not(:valid)::-webkit-input-placeholder {
+  color: #dd1e05;
+}
+.seci__email:not(:valid)::-moz-placeholder {
+  color: #dd1e05;
+}
+.seci__email:not(:valid):-ms-input-placeholder {
+  color: #dd1e05;
+}
+.seci__email:not(:valid)::-ms-input-placeholder {
+  color: #dd1e05;
+}
 .seci__email:not(:valid)::placeholder {
   color: #dd1e05;
 }
 .seci__email:valid {
   border: 1px solid #09a535;
+  color: #09a535;
+}
+.seci__email:valid::-webkit-input-placeholder {
+  color: #09a535;
+}
+.seci__email:valid::-moz-placeholder {
+  color: #09a535;
+}
+.seci__email:valid:-ms-input-placeholder {
+  color: #09a535;
+}
+.seci__email:valid::-ms-input-placeholder {
   color: #09a535;
 }
 .seci__email:valid::placeholder {
@@ -361,9 +467,14 @@
 
 /* ==map====== */
 .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .formms {
   width: 652px;
@@ -407,6 +518,18 @@
   border-radius: none;
   background-color: #ffffff;
 }
+.form-input::-webkit-input-placeholder {
+  color: #191919;
+}
+.form-input::-moz-placeholder {
+  color: #191919;
+}
+.form-input:-ms-input-placeholder {
+  color: #191919;
+}
+.form-input::-ms-input-placeholder {
+  color: #191919;
+}
 .form-input::placeholder {
   color: #191919;
 }
@@ -432,6 +555,8 @@
   border-radius: none;
 }
 .footerr {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 239px;
   padding-bottom: 100px;
@@ -468,8 +593,6 @@ footer-link {
   margin-top: 61px;
   margin-left: 70px;
 }
-
-
 
 
 
